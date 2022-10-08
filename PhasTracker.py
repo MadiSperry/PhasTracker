@@ -13,7 +13,7 @@ import tkinter.font as tkFont
 from PIL import Image, ImageTk
 
 # Config Variables for PNGs
-evidencePNGPath = "C:\\personalFiles\\Coding\\Python\\randomProjects\\PhasmophobiaTracker\\evidencePNG\\"
+evidencePNGPath = "C:\\"
 evidencePNG = ["EMF", "SpiritBox", "Fingerprints", "GhostOrb", "WritingBook", "Thermo", "DOTS"]
 thumbnailWidth, thumbnailHeight = 154, 101
 
