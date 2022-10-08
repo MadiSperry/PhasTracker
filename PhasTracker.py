@@ -13,7 +13,7 @@ import tkinter.font as tkFont
 from PIL import Image, ImageTk
 
 # Config Variables for PNGs
-evidencePNGPath = "C:\\"
+evidencePNGPath = "C:\\personalFiles\\Coding\\Python\\randomProjects\\PhasmophobiaTracker\\evidencePNG\\"
 evidencePNG = ["EMF", "SpiritBox", "Fingerprints", "GhostOrb", "WritingBook", "Thermo", "DOTS"]
 thumbnailWidth, thumbnailHeight = 154, 101
 
@@ -158,7 +158,7 @@ def compilePossibleGhosts(evidences):
     
     # If No Evidence, Return To main_menu(), Else If Each Ghost Is In Each List, Add It To possibleGhosts
     if len(evidences) == 0:
-        main_menu()
+        return
     elif len(evidences) == 1:
         possibleGhosts = evidenceSet[0]
     elif len(evidences) == 2:
@@ -173,7 +173,7 @@ def compilePossibleGhosts(evidences):
         for ghost in evidenceSet[0]:
             if ghost in evidenceSet[1] and ghost in evidenceSet[2] and ghost in evidenceSet[3]:
                 possibleGhosts.append(ghost)
-    main_menu()
+    return
 
 # If User Clicks A Ghost Name, That Ghost Name Is Added Or Removed From userDeniedGhosts
 def createUserDeclinedGhosts(ghost):
