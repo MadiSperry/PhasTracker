@@ -182,7 +182,6 @@ def createUserDeclinedGhosts(ghost):
         userDeniedGhosts.remove(ghosts[ghost])
     else:
         userDeniedGhosts += [ghosts[ghost]]
-    print(userDeniedGhosts)
     main_menu()
 
 # Decides The Color Of The Button If Evidence Is Not Selected, Confirmed, or Confirmed Impossible
