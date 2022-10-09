@@ -142,6 +142,7 @@ def decideColor(evidence):
 def reset():
     global evidenceStates, evidenceCollected, userDeniedGhosts, ghostsStates
     ghostsStates = [0 for i in range(len(ghosts))]
+    evidenceStates = [0 for i in range(len(evidenceTypes))]
     evidenceCollected = []
     userDeniedGhosts = []
     main_menu()
